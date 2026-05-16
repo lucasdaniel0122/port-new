@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>pradold</title>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1><strong>prado</strong>ld</h1>
+        <nav>
+            <ul><li><a href="#sobre">SOBRE</a></li></ul>
+            <ul><li><a href="#projetos">PROJETOS</a></li></ul>
+            <ul><li><a href="#contato">CONTATO</a></li></ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <p>EU SOU</p>
+            <h2 class="textoAnimado">PRADO</h2>
+            <p>WEB DESIGNER</p>
+        </section>
+
+        <section class="secaoSobre">
+            <h2>SOBRE MIM</h2>
+            <div class="conteudo">
+                <p>Sou um Web Designer e Desenvolvedor Full Stack 
+                especializado em projetos modernos e únicos focados 
+                em conversão. Transformo ideias em soluções reais, 
+                funcionais e escaláveis. Negócio são únicos e seus 
+                projetos também devem ser!</p>
+
+                <p>Me chamo Lucas do Prado, tenho 20 anos, curso 
+                Desenvolvimento de Sistemas, e possuo técnicos diversos 
+                na área Full Stack. Sou criativo, proativo e resiliente. 
+                Quero agregar positivamente a sua empresa, fazendo-a 
+                crescer e prosperar junto comigo.</p>
+            </div>
+        </section>
+
+        <section class="secaoProjetos">
+            <div class="projeto">
+                <h2>PROJETOS</h2>
+                <a target="_blank" href="https://stranger-things-dev-art-nu.vercel.app/" rel="noopener noreferrer">
+                    <img src="assets/img/projeto1.webp" alt="Imagem do primeiro projeto (Landing Page Stranger Things)">
+                </a>
+                <p>Landing page otimizada, animada e interativa, focada em UI/UX e também no 
+                refinamento do site anterior da série “Stranger Things” estreada pela plataforma 
+                Netflix. Foi Prontamente desenvolvida no evento DevArt: Projetos de Alto Valor do 
+                Desenvolvedor Gustavo Campelo, utilizando HTML, CSS, JS, GSAP, Figma e Photoshop</p>
+            </div>
+
+            <div class="projeto">
+                <img src="assets/img/projeto2.webp" alt="Imagem do segundo projeto (Landing Page de portfólio otimizado)">
+                <p>Site de portfólio moderno, com objetivo de otimizar e apresentar serviços e projetos 
+                de forma profissional e altamente eficaz e inovadora. É totalmente responsiva as demais 
+                telas, tanto desktop, como mobile, tablets e notebooks. Um diferencial enorme de se 
+                posicionar no mercado. Em seu desenvolvimento, foi utilizado HTML e CSS e para fins de design o Figma.</p>
+            </div>
+
+            <div class="projeto">
+                <a href="https://erro-404-liart.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/projeto3.webp" alt="Imagem do terceiro projeto (Landing Page interativa Erro 404)">
+                </a>
+                <p>Landing Page do famoso “Erro 404” dado nos mais diversos dispositivos ao acessar algo 
+                e propriamente não encontrar sua devida página no campo de busca. É totalmente animada 
+                com o vídeo do personagem em questão apresentado, além de otimizada e focada em UI/UX. 
+                Foi desenvolvida utilizando HTML, CSS, JS, Flow IA (vídeo do monstrinho) e Figma em seu design.</p>
+            </div>
+
+            <div class="projeto">
+                <a href="https://projeto3d-devart.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/projeto4.webp" alt="Imagem do quarto projeto (Página de Vendas 3D do Desenvolvedor)">
+                </a>
+                <p>Projeto 3D de uma página de vendas automatizada, focada em conversão, modernização, 
+                interatividade e animações. Um website escalável e funcional tendo base total UI/UX. 
+                Foi feito à partir do evento DevArt: Projetos de Alto Valor do Desenvolvedor Gustavo Campelo, 
+                utilizando HTML, CSS, JS, GSAP para animações com scroll, Three.js para inserção de elementos 3D, 
+                Flow IA para converter imagens em vídeos e Figma para seu design.</p>
+            </div>
+        </section>
+
+        <footer class="footerContato">
+            <div class="esquerdaContato">
+                <h2>CONTATO</h2>
+                <p>Cada projeto desenvolvido é único e personalizado. Todos feitos 
+                para agregarem experiências que são transformadoras pro usuário. 
+                Utilizando IA de forma produtiva e com base técnica, entrego 
+                projetos de alto valor e que geram conversão.</p>
+
+                <h2>E-MAIL</h2>
+                <p><a href="mailto:lucasdanielvp@gmail.com?subject=Mais%20informações%20sobre%20perfil%20profissional&body=Olá,%20gostaria%20de%20mais%20informações%20sobre%20você%20e%20seu%20campo%20profissional.">lucasdanielvp@gmail.com</a></p>
+            </div>
+
+            <div class="espacoContato"></div>
+
+            <div class="direitaContato">
+                <h2>GITHUB</h2>
+                <p><a href="https://github.com/lucasdaniel0122">@lucasdaniel0122</a></p>
+
+                <h2>LINKEDIN</h2>
+                <p><a href="https://www.linkedin.com/in/lucas-do-prado-30843b33a/" target="_blank">Lucas do Prado</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <div class="preloader-text">0%</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
