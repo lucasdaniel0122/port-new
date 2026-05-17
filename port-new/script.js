@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     preloaderText.textContent = `${Math.floor(count)}%`;
-  }, 40);
+  }, 50);
 
   // 2. SEQUÊNCIA DE ANIMAÇÕES
   function iniciarAnimacoesSubsequentes() {
@@ -62,6 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
           },
         });
       });
-    }, "-=0.9");
+    }, "-= 0.9");
   }
 });
