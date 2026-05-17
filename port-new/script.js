@@ -50,18 +50,18 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.from(split.chars, {
           filter: "blur(20px)",
           opacity: 0,
-          duration: 0.9,
+          duration: 0.6,
           stagger: {
-            each: 0.03,
+            each: 0.09,
             from: "random",
           },
           scrollTrigger: {
-            trigger: texto,
+            trigger: ".hero",
             start: "top 80%",
             toggleActions: "play none restart none",
           },
         });
       });
-    }, "-=0.3");
+    }, "-=0.9");
   }
 });
