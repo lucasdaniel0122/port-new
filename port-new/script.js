@@ -64,4 +64,54 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }, "-= 0.9");
   }
+
+  //ANIMAÇÕES SECTION SOBRE
+  const tlSobre = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#sobre",
+      start: "top 75%",
+      toggleActions: "play none restart none",
+      duration: .9,
+      stagger: 2
+    }
+  });
+
+  const tituloSobre = document.querySelector("#sobre h2.textoAnimado", {
+    if (tituloSobre) {
+      const splitTitulo = new SplitText(tituloSobre, {types: "chars"});
+
+      tlSobre.from(splitTitulo.chars, {
+        filter: "blur(20px)",
+        opacity: 0,
+        duration: 0.5,
+        stagger: {
+          each: 0.05,
+          from: "random"
+        }
+      });
+
+      tlSobre.from(".textoFade", {
+       opacity: 0,
+       y: 20,
+       filter: "blur(10px)",
+       duration: 0.8,
+       stagger: 0.2,
+       ease: "power2.out"
+      }, "-=0.1");
+
+    },
+  }, 0.8);
+
+  // ANIMAÇÕES FOOTER
+
+ gsap.from("footer", {
+    y: "-30%",
+    immediateRender: false,
+    scrollTrigger: {
+        trigger: "footer",
+        scrub: true,
+        invalidateOnRefresh: true,
+        end:"100% 100%"
+    }
+ });
 });
